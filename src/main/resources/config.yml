@@ -1,3 +1,4 @@
 Debug: true
+bStats: true
 Language: Chinese
 DatabaseType: YAML

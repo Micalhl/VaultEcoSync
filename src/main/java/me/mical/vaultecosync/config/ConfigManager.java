@@ -13,12 +13,19 @@ import org.serverct.parrot.parrotx.data.autoload.annotations.PAutoloadGroup;
 @PAutoloadGroup
 public class ConfigManager extends PConfig {
 
-    @PAutoload
+    @PAutoload("DatabaseType")
     public static String DATABASE_TYPE;
 
-    public static ConfigManager INSTANCE = ParrotXAPI.getConfigManager(ConfigManager.class);
+    private static ConfigManager instance;
 
     public ConfigManager() {
         super(ParrotXAPI.getPlugin(VaultEcoSync.class), "config", "主配置文件");
+    }
+
+    public static ConfigManager getInstance() {
+        if (instance == null) {
+            instance = new ConfigManager();
+        }
+        return instance;
     }
 }

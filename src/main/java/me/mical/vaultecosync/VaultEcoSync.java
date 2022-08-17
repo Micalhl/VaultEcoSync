@@ -17,8 +17,9 @@ public final class VaultEcoSync extends PPlugin {
 
     @Override
     protected void preload() {
-        pConfig = new ConfigManager();
+        pConfig = ConfigManager.getInstance();
         setTimeLog("插件已启动, 耗时 &c{0} &fMs.");
+        setVersionLog("本插件基于 &cParrotX&f, 版本: &c{0}&f.");
     }
 
     @Override
