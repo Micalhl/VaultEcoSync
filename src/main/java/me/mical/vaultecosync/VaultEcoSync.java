@@ -1,17 +1,6 @@
 package me.mical.vaultecosync;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import org.serverct.parrot.parrotx.PPlugin;
 
-public final class VaultEcoSync extends JavaPlugin {
-
-    @Override
-    public void onEnable() {
-        // Plugin startup logic
-
-    }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
+public final class VaultEcoSync extends PPlugin {
 }
