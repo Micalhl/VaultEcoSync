@@ -1,0 +1,4 @@
+name: VaultEcoSync
+version: '${project.version}'
+main: me.mical.vaultecosync.VaultEcoSync
+authors: [ Mical ]
